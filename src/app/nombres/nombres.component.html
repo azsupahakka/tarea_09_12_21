@@ -1,0 +1,20 @@
+<h2>Listado de ciudades:</h2>
+<div *ngIf="mostrar">
+  <ul >
+    <li *ngFor="let ciudad of ciudades; let i = index">
+      {{ciudad}}
+    </li>
+  </ul>
+</div>
+<button (click)="listar()">Listar</button>
+<button (click)="borrarCiudad()">Borrar</button>
+<div>
+  <ul >
+    <li *ngFor="let ciudad of ciudadesBorradas; let i = index">
+      {{ciudad}}
+    </li>
+  </ul>
+</div>
+
+
+
